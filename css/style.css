@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #101010;
+    --color-white: #f0f0f0;
+    --color-gray: #5c5c5c;
+    --color-destaque: #1d2adf;
+
+    --font-title-desktop: 3rem;
+    --font-span-desktop: 1.5rem;
+    --font-text-desktop: 1.2rem;
+
+    --font-title-mobile: 2rem;
+    --font-span-mobile: 1.2rem;
+    --font-text-mobile: 1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Card */
+.card {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border: 2px solid var(--color-destaque);
+    border-radius: 10px;
+}
+
+/* Widgets */
+.top, .center, .bottom {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Usuário */
+.user {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.content-user {
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-user img {
+    width: 13%;
+    border-radius: 10px;
+}
+
+.info-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-user h1 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.info-user span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-destaque);
+}
+
+.info-user p {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--color-black);
+}
+
+/* Projeto */
+.projeto {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-projeto {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-projeto {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-destaque);
+}
+
+.img-projeto {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-projeto img {
+    width: 40%;
+    margin: 0 20px;
+}
+
+.btn-projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.btn {
+    background-color: var(--color-destaque);
+    color: var(--color-white);
+    font-weight: 600;
+    padding: .7rem 1.3rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.box-social {
+    background-color: var(--color-destaque);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-social i {
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+
+.box-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Skills */
+.skills {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content-skills {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-skills {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-destaque);
+}
+
+.skills-icons {
+    width: 100%;
+    max-width: 100%;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-icons i {
+    font-size: 3rem;
+    transition: color 0.3s;
+}
+
+.skills-icons i:hover {
+    cursor: pointer;
+}
+
+.skills-icons .devicon-html5-plain:hover {
+    color: #e34f26;
+}
+
+.skills-icons .devicon-css3-plain:hover {
+    color: #1572b6;
+}
+
+.skills-icons .devicon-javascript-plain:hover {
+    color: #f7df1e;
+}
+
+.skills-icons .devicon-python-plain:hover {
+    color: #5c5c5c;
+}
+
+.skills-icons .devicon-mysql-plain:hover {
+    color: #00406e;
+}
+
+.skills-icons .devicon-django-plain:hover {
+    color: #092e20;
+}
+
+.skills-icons .devicon-react-original:hover {
+    color: #61dafb;
+}
+
+/* Serviços */
+.servicos {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-servicos {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.text-servicos h1 {
+    font-size: var(--font-title-mobile);
+    color: var(--color-black);
+}
+
+.text-servicos span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.servicos-box {
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-servico {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.item-servico i {
+    font-size: 3rem;
+    color: var(--color-destaque);
+}
+
+.item-servico span {
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
+
+/* Contato */
+.contato {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-destaque);
+    padding: 1rem;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+/* Estilos para os ícones de projetos */
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.redes-sociais {
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
